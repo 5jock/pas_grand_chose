@@ -1,1 +1,1 @@
-copy D:\Users\benoit.audinet\Documents\Projets\Python\Apprentissage\pas_grand_chose\user.txt D:\Users\benoit.audinet\Documents\Projets\Python\Apprentissage\pas_grand_chose\repertoire_sauv
+copy %1\user.txt %1\repertoire_sauv
