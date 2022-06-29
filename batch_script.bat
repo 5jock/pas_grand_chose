@@ -1,2 +1,2 @@
-mkdir %~1repertoire_sauv
-copy %~1user.txt %~1repertoire_sauv
+mkdir %~1\\repertoire_sauv
+copy %~1\\user.txt %~1\\repertoire_sauv
