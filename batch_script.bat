@@ -1,2 +1,4 @@
-mkdir %~1\\repertoire_sauv
-copy %~1\\user.txt %~1\\repertoire_sauv
+echo off
+set chemin=%1
+mkdir %chemin%\repertoire_sauv 
+copy %chemin%\user.txt %chemin%\repertoire_sauv
