@@ -7,4 +7,5 @@ def renvoi_user(a):
     return ligne
 
 
-renvoi_user(sys.argv[1])
+sys.argv[2] = renvoi_user(sys.argv[1])
+print(sys.argv[2])
