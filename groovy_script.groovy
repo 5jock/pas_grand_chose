@@ -22,7 +22,13 @@ node {
     }
     
     stage('Lancer le script .bat') {
-        bat "D:/Users/benoit.audinet/Documents/Projets/Python/Apprentissage/pas_grand_chose/batch_script.bat ${chemin}"
+        script {
+          nomFichier = input message: 'Veillez saisir un nom de fichier : ',
+                             parameters: [string(defaultValue: '',
+                                          description: '',
+                                          name: 'Nom du fichier')]
+        }
+        bat "D:/Users/benoit.audinet/Documents/Projets/Python/Apprentissage/pas_grand_chose/batch_script.bat ${chemin} ${nomFichier}"
     }
     
     stage('Afficher dans la console') {
